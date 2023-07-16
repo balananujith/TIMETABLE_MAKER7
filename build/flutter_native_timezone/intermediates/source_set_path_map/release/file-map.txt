@@ -1,0 +1,12 @@
+com.whelksoft.flutter_native_timezone-jetified-window-java-1.0.0-beta04-0 C:\Users\acer\.gradle\caches\transforms-3\006d93cd422dbc43e89591147c2de572\transformed\jetified-window-java-1.0.0-beta04\res
+com.whelksoft.flutter_native_timezone-core-1.6.0-1 C:\Users\acer\.gradle\caches\transforms-3\4ca28c4a71705f8a687c69dda140a277\transformed\core-1.6.0\res
+com.whelksoft.flutter_native_timezone-jetified-annotation-experimental-1.1.0-2 C:\Users\acer\.gradle\caches\transforms-3\8965c941cf4bee4d72541b965c7c9d39\transformed\jetified-annotation-experimental-1.1.0\res
+com.whelksoft.flutter_native_timezone-jetified-window-1.0.0-beta04-3 C:\Users\acer\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\res
+com.whelksoft.flutter_native_timezone-main-4 C:\Users\acer\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_native_timezone-2.0.0\android\src\main\res
+com.whelksoft.flutter_native_timezone-release-5 C:\Users\acer\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_native_timezone-2.0.0\android\src\release\res
+com.whelksoft.flutter_native_timezone-pngs-6 E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_native_timezone\generated\res\pngs\release
+com.whelksoft.flutter_native_timezone-resValues-7 E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_native_timezone\generated\res\resValues\release
+com.whelksoft.flutter_native_timezone-rs-8 E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_native_timezone\generated\res\rs\release
+com.whelksoft.flutter_native_timezone-mergeReleaseResources-9 E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_native_timezone\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.whelksoft.flutter_native_timezone-mergeReleaseResources-10 E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_native_timezone\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.whelksoft.flutter_native_timezone-merged_res-11 E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_native_timezone\intermediates\merged_res\release

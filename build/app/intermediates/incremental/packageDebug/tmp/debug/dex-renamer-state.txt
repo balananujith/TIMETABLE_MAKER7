@@ -1,0 +1,4 @@
+#Sun Jul 16 12:54:51 IST 2023
+base.0=E\:\\time_table_maker_app (2)\\time_table_maker_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

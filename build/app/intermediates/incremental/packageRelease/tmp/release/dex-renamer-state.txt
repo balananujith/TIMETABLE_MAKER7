@@ -1,0 +1,4 @@
+#Sun Jul 16 01:51:36 IST 2023
+base.0=E\:\\time_table_maker_app (2)\\time_table_maker_app\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

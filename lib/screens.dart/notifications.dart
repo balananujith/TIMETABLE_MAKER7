@@ -39,7 +39,7 @@ class NotificationService {
             'Main Channel',
             importance: Importance.max,
             priority: Priority.max,
-            icon: '@drawable/ic_flutternotification'
+            icon: '@drawable/notifications.png',
         ),
       ),
       uiLocalNotificationDateInterpretation: UILocalNotificationDateInterpretation.absoluteTime,
@@ -49,5 +49,27 @@ class NotificationService {
 
   Future<void> cancelAllNotifications() async {
     await flutterLocalNotificationsPlugin.cancelAll();
+  }
+  Future<void> scheduleNotification({
+    required int id,
+    required String title,
+    required String body,
+    required DateTime scheduledDate,
+    required String scheduledTime,
+  }) async {
+    // Convert scheduledDate and scheduledTime to a single DateTime object
+    final DateTime scheduledDateTime = DateTime(
+      scheduledDate.year,
+      scheduledDate.month,
+      scheduledDate.day,
+      int.parse(scheduledTime.split(':')[0]),
+      int.parse(scheduledTime.split(':')[1].split(' ')[0]),
+    );
+
+    // Calculate the difference in seconds between the scheduledDateTime and the current time
+    final int seconds = scheduledDateTime.difference(DateTime.now()).inSeconds;
+
+    // Show the notification with the provided details after the calculated delay
+    await showNotification(id, title, body, seconds);
   }
 }

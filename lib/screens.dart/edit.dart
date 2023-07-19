@@ -7,7 +7,7 @@ import 'package:time_table_maker_app/screens.dart/view.dart';
 import 'package:time_table_maker_app/widgets/input_field_for_editscreen.dart';
 import 'package:time_table_maker_app/widgets/button_for_editscreen.dart';
 import '../controllers/task_controllers.dart';
-
+import 'package:time_table_maker_app/screens.dart/notifications.dart';
 class EditScreen extends StatefulWidget {
   const EditScreen({Key? key}) : super(key: key);
 
@@ -17,13 +17,13 @@ class EditScreen extends StatefulWidget {
 }
 
 class _EditScreenState extends State<EditScreen> {
+  final NotificationService _notificationServices = NotificationService();
   @override
   void initState() {
     super.initState();
     _checkTaskAlerts();
 
   }
-
 
   final TaskController _taskController = Get.put(TaskController());
   final TextEditingController _titleController = TextEditingController();
@@ -103,7 +103,33 @@ class _EditScreenState extends State<EditScreen> {
                     ),
                   ],
                 ),
-
+                MyInputField(
+                  title: 'Remind',
+                  hint: '$_selectedRemind minutes early',
+                  widget: DropdownButton(
+                    icon: const Icon(Icons.keyboard_arrow_down),
+                    iconSize: 32,
+                    elevation: 4,
+                    style: subtitleStyle,
+                    value: _selectedRemind,
+                    onChanged: (int? newValue) {
+                      if (newValue != null) {
+                        setState(() {
+                          _selectedRemind = newValue;
+                        });
+                      }
+                    },
+                    items: remindList.map<DropdownMenuItem<int>>(
+                          (int value) {
+                        return DropdownMenuItem<int>(
+                          value: value,
+                          child: Text(value.toString(),
+                            style: TextStyle(color: Colors.grey),),
+                        );
+                      },
+                    ).toList(),
+                  ),
+                ),
                 const SizedBox(height: 18),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -233,7 +259,7 @@ class _EditScreenState extends State<EditScreen> {
     // Get the current time in 24-hour format
     final DateTime now = DateTime.now();
     final String formattedNow = DateFormat('HH:mm').format(now);
-    print('Time Difference: $now');
+
     // Iterate over your tasks list and check if any task is starting soon
     for (var task in _taskController.taskList) {
       final String? startTime = task.startTime;
@@ -246,13 +272,13 @@ class _EditScreenState extends State<EditScreen> {
 
         // Calculate the time difference between the task's start time and the current time
         final Duration timeDifference = DateFormat('HH:mm').parse(startTime).difference(DateFormat('HH:mm').parse(formattedNow));
-        print('Time Difference: $timeDifference');
 
-        // Show an alert box if the task is starting within a specified time frame (e.g., 5 minutes)
-        if (timeDifference.inMinutes <= 5 && timeDifference.isNegative == false) {
+        // Convert remind minutes to Duration
+        final Duration remindDuration = Duration(minutes: _selectedRemind);
 
-             _handleTaskAlert(title, note, taskStartTime24Hrs);
-
+        // Check if the time difference is less than or equal to the selected remind duration
+        if (timeDifference == remindDuration && timeDifference.isNegative == false) {
+          _handleTaskAlert(title, note, taskStartTime24Hrs);
         }
       }
     }
@@ -286,6 +312,7 @@ class _EditScreenState extends State<EditScreen> {
       ),
     );
     _checkTaskAlerts();
+
     print("My id is "+"$value");
   }
 
@@ -311,8 +338,12 @@ class _EditScreenState extends State<EditScreen> {
       context: context,
       initialEntryMode: TimePickerEntryMode.input,
       initialTime: isStartTime
-          ? TimeOfDay.fromDateTime(DateTime.parse(_startTime))
-          : TimeOfDay.fromDateTime(DateTime.parse(_endTime)),
+          ? TimeOfDay.fromDateTime(
+        DateFormat('hh:mm a').parse(_startTime),
+      )
+          : TimeOfDay.fromDateTime(
+        DateFormat('hh:mm a').parse(_endTime),
+      ),
     );
 
     if (pickedTime != null) {

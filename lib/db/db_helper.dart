@@ -5,8 +5,9 @@ import '../models/task.dart';
 class DBhelper {
   static Database? _db;
   static final int _version = 1;
-  static final String _tableName = 'tasks';
-
+  static final String tableName = 'tasks';
+  // Add a static getter for _db
+  static Database? get db => _db;
   static Future<void> initDb() async {
     if (_db != null) {
       return;
@@ -19,7 +20,7 @@ class DBhelper {
         onCreate: (db, version) {
           print('creating a new one');
           return db.execute(
-            "CREATE TABLE $_tableName("
+            "CREATE TABLE $tableName("
                 "id INTEGER PRIMARY KEY AUTOINCREMENT,"
                 "title STRING,"
                 "note TEXT,"
@@ -45,7 +46,7 @@ class DBhelper {
     }
     try {
       await _db!.transaction((txn) async {
-        await txn.delete(_tableName);
+        await txn.delete(tableName);
       });
     } catch (e) {
       print(e);
@@ -57,7 +58,7 @@ class DBhelper {
     }
     try {
       return await _db!.delete(
-        _tableName,
+        tableName,
         where: 'id = ?',
         whereArgs: [taskId],
       );
@@ -69,11 +70,11 @@ class DBhelper {
 
   static Future<int> insert(Task? task) async {
     print('insert function called');
-    return await _db?.insert(_tableName, task!.toJson()) ?? 1;
+    return await _db?.insert(tableName, task!.toJson()) ?? 1;
   }
 
   static Future<List<Map<String, dynamic>>> query() async {
     print('query function called');
-    return await _db!.query(_tableName);
+    return await _db!.query(tableName);
   }
 }

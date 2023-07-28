@@ -3,12 +3,13 @@ import 'package:get_storage/get_storage.dart';
 import 'package:time_table_maker_app/screens.dart/splash.dart';
 import 'db/db_helper.dart';
 import 'package:time_table_maker_app/screens.dart/edit.dart';
-
+import 'package:time_table_maker_app/screens.dart/notifications1.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await DBhelper.initDb();
   await GetStorage.init();
+  printSelectedFields();
   runApp(const MyApp());
 }
 

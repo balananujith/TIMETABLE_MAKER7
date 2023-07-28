@@ -8,6 +8,10 @@ import 'package:time_table_maker_app/widgets/input_field_for_editscreen.dart';
 import 'package:time_table_maker_app/widgets/button_for_editscreen.dart';
 import '../controllers/task_controllers.dart';
 import 'package:time_table_maker_app/screens.dart/notifications.dart';
+import 'package:time_table_maker_app/screens.dart/notifications1.dart';
+
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+
 class EditScreen extends StatefulWidget {
   const EditScreen({Key? key}) : super(key: key);
 
@@ -17,13 +21,14 @@ class EditScreen extends StatefulWidget {
 }
 
 class _EditScreenState extends State<EditScreen> {
-  final NotificationService _notificationServices = NotificationService();
+  final NotificationService _notificationService = NotificationService();
+
   @override
   void initState() {
     super.initState();
+    printSelectedFields();
     _checkTaskAlerts();
-
-  }
+   }
 
   final TaskController _taskController = Get.put(TaskController());
   final TextEditingController _titleController = TextEditingController();
@@ -256,29 +261,22 @@ class _EditScreenState extends State<EditScreen> {
     );
   }
   void _checkTaskAlerts() {
-    // Get the current time in 24-hour format
     final DateTime now = DateTime.now();
-    final String formattedNow = DateFormat('HH:mm').format(now);
+    final String formattedNow = DateFormat('hh:mm a').format(now);
 
-    // Iterate over your tasks list and check if any task is starting soon
     for (var task in _taskController.taskList) {
       final String? startTime = task.startTime;
       final String? title = task.title;
       final String? note = task.note;
 
       if (startTime != null && title != null && note != null) {
-        // Use taskStartTime24Hrs for calculating the time difference
-        final String taskStartTime24Hrs = DateFormat('HH:mm').format(DateFormat('hh:mm a').parse(startTime));
-
-        // Calculate the time difference between the task's start time and the current time
-        final Duration timeDifference = DateFormat('HH:mm').parse(startTime).difference(DateFormat('HH:mm').parse(formattedNow));
-
-        // Convert remind minutes to Duration
+        final String taskStartTime12Hrs = startTime;
+        final Duration timeDifference = DateFormat('hh:mm a').parse(taskStartTime12Hrs).difference(DateFormat('hh:mm a').parse(formattedNow));
         final Duration remindDuration = Duration(minutes: _selectedRemind);
-
-        // Check if the time difference is less than or equal to the selected remind duration
+        print("time now: $now");
+        print("timedifference : $timeDifference");
         if (timeDifference == remindDuration && timeDifference.isNegative == false) {
-          _handleTaskAlert(title, note, taskStartTime24Hrs);
+          _handleTaskAlert(title, note, startTime);
         }
       }
     }
@@ -287,15 +285,8 @@ class _EditScreenState extends State<EditScreen> {
 
   void _handleTaskAlert(String title, String description, String startTime) {
     // Optionally, you can add additional logic here before showing the alert box
-
     _showTaskAlert(title, description, startTime);
   }
-
-
-
-
-
-
 
   _addTaskToDb() async {
     int value = await _taskController.addTask(
@@ -311,8 +302,14 @@ class _EditScreenState extends State<EditScreen> {
         isCompleted: 0,
       ),
     );
+    _notificationService.scheduleNotification(
+      id: value, // You can use the 'value' returned from addTask as the notification ID
+      title: _titleController.text,
+      body: _noteController.text,
+      scheduledDate: _selectedDate,
+      scheduledTime: _startTime,
+    );
     _checkTaskAlerts();
-
     print("My id is "+"$value");
   }
 

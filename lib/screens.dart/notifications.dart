@@ -14,11 +14,11 @@ class NotificationService {
   NotificationService._internal();
 
   Future<void> initNotification() async {
-    final AndroidInitializationSettings initializationSettingsAndroid =
-    AndroidInitializationSettings('@drawable/ic_flutternotification');
+    const AndroidInitializationSettings initializationSettingsAndroid =
+    AndroidInitializationSettings('@drawable/timetable.png');
 
 
-    final InitializationSettings initializationSettings =
+    const InitializationSettings initializationSettings =
     InitializationSettings(
         android: initializationSettingsAndroid,
 
@@ -39,7 +39,7 @@ class NotificationService {
             'Main Channel',
             importance: Importance.max,
             priority: Priority.max,
-            icon: '@drawable/notifications.png',
+            icon: '@drawable/timetable.png',
         ),
       ),
       uiLocalNotificationDateInterpretation: UILocalNotificationDateInterpretation.absoluteTime,
@@ -66,10 +66,19 @@ class NotificationService {
       int.parse(scheduledTime.split(':')[1].split(' ')[0]),
     );
 
-    // Calculate the difference in seconds between the scheduledDateTime and the current time
-    final int seconds = scheduledDateTime.difference(DateTime.now()).inSeconds;
+    // Calculate the difference between the scheduledDateTime and the current time
+    final Duration difference = scheduledDateTime.difference(DateTime.now());
 
-    // Show the notification with the provided details after the calculated delay
-    await showNotification(id, title, body, seconds);
+    // Calculate the difference in seconds
+    final int seconds = difference.inSeconds;
+
+    if (difference.isNegative) {
+      // If the scheduledDateTime is in the past, show the notification immediately
+      await showNotification(id, title, body, 0);
+    } else {
+      // Show the notification with the provided details after the calculated delay
+      await showNotification(id, title, body, seconds);
+    }
   }
+
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">227422289572-2jlpnule520hio2sto0lgcu21h5hbu3c.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">227422289572</string>
+    <string name="google_api_key" translatable="false">AIzaSyBqOT8Skc3r1lwFfq1pk-83v2sRC0r8OGk</string>
+    <string name="google_app_id" translatable="false">1:227422289572:android:bdab45f8e6501ee5687031</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBqOT8Skc3r1lwFfq1pk-83v2sRC0r8OGk</string>
+    <string name="google_storage_bucket" translatable="false">timetablemaker7.appspot.com</string>
+    <string name="project_id" translatable="false">timetablemaker7</string>
+</resources>

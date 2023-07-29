@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.time_table_maker_app-mergeDebugResources-10:/values-v24/values-v24.xml",
+            "outputFile": "com.example.time_table_maker_app-mergeDebugResources-16:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\acer\\.gradle\\caches\\transforms-3\\13f29b4003f18f53249d90821a7f80a9\\transformed\\media-1.1.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\acer\\.gradle\\caches\\transforms-3\\35a4d9deef986505ae8f8d270c245025\\transformed\\media-1.1.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

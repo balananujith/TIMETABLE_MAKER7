@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:time_table_maker_app/screens.dart/edit.dart';
 import 'package:time_table_maker_app/screens.dart/view.dart';
-
+import 'package:time_table_maker_app/screens.dart/notifications1.dart';
   AppBar _appBar() {
   return AppBar(
     elevation: 0,

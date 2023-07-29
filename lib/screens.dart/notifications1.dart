@@ -1,5 +1,8 @@
 import 'package:time_table_maker_app/db/db_helper.dart';
 import 'package:time_table_maker_app/models/task.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:timezone/timezone.dart' as tz;
+import 'package:timezone/data/latest.dart' as tz;
 
 Future<List<Map<String, dynamic>>> fetchSelectedFields() async {
   // Initialize the database
@@ -58,6 +61,32 @@ Future<void> printSelectedFields() async {
     print('Extra Data: $extraData');
   }
 }
+final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
+
+void scheduleNotification(DateTime startTime) async {
+  const AndroidNotificationDetails androidPlatformChannelSpecifics =
+  AndroidNotificationDetails(
+    'your_channel_id', // Change this channel ID to a unique value for your app
+    'Scheduled Notifications',
+    'Hello',
+    importance: Importance.max,
+    priority: Priority.high,
+  );
+  const NotificationDetails platformChannelSpecifics =
+  NotificationDetails(android: androidPlatformChannelSpecifics);
+
+  await flutterLocalNotificationsPlugin.zonedSchedule(
+    0, // Notification ID (change this for different notifications)
+    'Task Reminder', // Notification title
+    'Your task is starting now!', // Notification body
+    tz.TZDateTime.from(startTime, tz.local), // Scheduled date and time
+    platformChannelSpecifics,
+    uiLocalNotificationDateInterpretation:
+    UILocalNotificationDateInterpretation.absoluteTime,
+    androidAllowWhileIdle: true,
+  );
+}
+
 
 
 

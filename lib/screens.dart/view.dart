@@ -7,6 +7,7 @@ import 'package:time_table_maker_app/db/db_helper.dart';
 
 import 'package:time_table_maker_app/controllers/task_controllers.dart';
 import 'package:time_table_maker_app/models/task.dart';
+import 'package:time_table_maker_app/screens.dart/notifications1.dart';
 class ViewScreen extends StatefulWidget {
   const ViewScreen({Key? key}) : super(key: key);
 

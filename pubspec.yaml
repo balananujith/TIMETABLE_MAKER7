@@ -31,7 +31,10 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_datetime_picker: ^1.5.1
-  flutter_local_notifications: null
+  firebase_core: ^1.6.0
+  firebase_core_platform_interface: 4.5.1
+  firebase_messaging: ^13.0.4
+  flutter_local_notifications: ^5.0.0+4
   flutter_native_timezone: null
   get: ^4.1.4
   get_storage: null

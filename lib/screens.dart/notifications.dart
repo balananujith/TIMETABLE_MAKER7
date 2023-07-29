@@ -37,6 +37,7 @@ class NotificationService {
         android: AndroidNotificationDetails(
             'main_channel',
             'Main Channel',
+            'Hello',
             importance: Importance.max,
             priority: Priority.max,
             icon: '@drawable/timetable.png',

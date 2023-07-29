@@ -52,6 +52,19 @@ class DBhelper {
       print(e);
     }
   }
+  static Future<List<Task>> getAllTasks() async {
+    final tasks = await _db!.query(tableName);
+
+    return tasks.map((taskMap) {
+      return Task(
+        id: taskMap['id'] as int,
+        title: taskMap['title'] as String,
+        startTime: taskMap['startTime'] as String,
+        remind: taskMap['remindTime'] as int,
+      );
+    }).toList();
+  }
+
   static Future<int> delete(int? taskId) async {
     if (_db == null) {
       return -1;

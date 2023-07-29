@@ -1,34 +1,30 @@
 [
     {
-        "merged": "com.example.time_table_maker_app-merged_res-12:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.example.time_table_maker_app-main-6:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "com.example.time_table_maker_app-merged_res-18:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.example.time_table_maker_app-main-11:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "com.example.time_table_maker_app-merged_res-12:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.example.time_table_maker_app-main-6:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "com.example.time_table_maker_app-merged_res-18:/drawable-v21_launch_background.xml.flat",
+        "source": "com.example.time_table_maker_app-main-11:/drawable-v21/launch_background.xml"
     },
     {
-        "merged": "com.example.time_table_maker_app-merged_res-12:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.example.time_table_maker_app-main-6:/mipmap-mdpi/ic_launcher.png"
+        "merged": "com.example.time_table_maker_app-merged_res-18:/drawable_timetable.png.flat",
+        "source": "com.example.time_table_maker_app-main-11:/drawable/timetable.png"
     },
     {
-        "merged": "com.example.time_table_maker_app-merged_res-12:/drawable_timetable.png.flat",
-        "source": "com.example.time_table_maker_app-main-6:/drawable/timetable.png"
+        "merged": "com.example.time_table_maker_app-merged_res-18:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.example.time_table_maker_app-main-11:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.example.time_table_maker_app-merged_res-12:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.example.time_table_maker_app-main-6:/mipmap-hdpi/ic_launcher.png"
+        "merged": "com.example.time_table_maker_app-merged_res-18:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.example.time_table_maker_app-main-11:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.example.time_table_maker_app-merged_res-12:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.example.time_table_maker_app-main-6:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "com.example.time_table_maker_app-merged_res-18:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.example.time_table_maker_app-main-11:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.example.time_table_maker_app-merged_res-12:/drawable_launch_background.xml.flat",
-        "source": "com.example.time_table_maker_app-main-6:/drawable/launch_background.xml"
-    },
-    {
-        "merged": "com.example.time_table_maker_app-merged_res-12:/drawable-v21_launch_background.xml.flat",
-        "source": "com.example.time_table_maker_app-main-6:/drawable-v21/launch_background.xml"
+        "merged": "com.example.time_table_maker_app-merged_res-18:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.time_table_maker_app-main-11:/mipmap-hdpi/ic_launcher.png"
     }
 ]

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:time_table_maker_app/functions/functions.dart';
+import 'package:time_table_maker_app/main.dart';
 import 'package:time_table_maker_app/models/task.dart';
 import 'package:time_table_maker_app/screens.dart/view.dart';
 import 'package:time_table_maker_app/widgets/input_field_for_editscreen.dart';
@@ -285,6 +286,7 @@ class _EditScreenState extends State<EditScreen> {
 
   void _handleTaskAlert(String title, String description, String startTime) {
     // Optionally, you can add additional logic here before showing the alert box
+    showNotification(title,startTime);
     _showTaskAlert(title, description, startTime);
   }
 

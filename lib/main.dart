@@ -43,8 +43,6 @@ Future<void> main() async {
     sound: true,
   );
 
-  // Call showNotification method when the app opens
-  showNotification();
 
   runApp(const MyApp());
 }
@@ -62,11 +60,11 @@ class MyApp extends StatelessWidget {
 }
 
 // Function to show local notification
-void showNotification() {
+void showNotification(String title,String startTime) {
   flutterLocalNotificationsPlugin.show(
     1,
-    "Testing Notification",
-    "This is a test notification!",
+    title,
+    "Your task starting at: $startTime",
     NotificationDetails(
       android: AndroidNotificationDetails(
         channel.id,

@@ -126,6 +126,7 @@ class _ViewScreenState extends State<ViewScreen> {
             ),
 
             Expanded(
+              child: SingleChildScrollView(
               child: Obx(() {
                 return Table(
                   border: TableBorder.all(color: Colors.grey),
@@ -263,6 +264,7 @@ class _ViewScreenState extends State<ViewScreen> {
                 );
               }),
     ),
+            )
           ],
         )
 

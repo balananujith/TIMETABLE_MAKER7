@@ -8,6 +8,7 @@
 
 import 'package:cloud_firestore_web/cloud_firestore_web.dart';
 import 'package:firebase_core_web/firebase_core_web.dart';
+import 'package:firebase_database_web/firebase_database_web.dart';
 import 'package:firebase_messaging_web/firebase_messaging_web.dart';
 import 'package:flutter_native_timezone/flutter_native_timezone_web.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
@@ -16,6 +17,7 @@ void registerPlugins([final Registrar? pluginRegistrar]) {
   final Registrar registrar = pluginRegistrar ?? webPluginRegistrar;
   FirebaseFirestoreWeb.registerWith(registrar);
   FirebaseCoreWeb.registerWith(registrar);
+  FirebaseDatabaseWeb.registerWith(registrar);
   FirebaseMessagingWeb.registerWith(registrar);
   FlutterNativeTimezonePlugin.registerWith(registrar);
   registrar.registerMessageHandler();

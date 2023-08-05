@@ -1,17 +1,26 @@
-com.example.time_table_maker_app-jetified-window-java-1.0.0-beta04-0 C:\Users\acer\.gradle\caches\transforms-3\006d93cd422dbc43e89591147c2de572\transformed\jetified-window-java-1.0.0-beta04\res
-com.example.time_table_maker_app-media-1.1.0-1 C:\Users\acer\.gradle\caches\transforms-3\13f29b4003f18f53249d90821a7f80a9\transformed\media-1.1.0\res
-com.example.time_table_maker_app-core-1.6.0-2 C:\Users\acer\.gradle\caches\transforms-3\4ca28c4a71705f8a687c69dda140a277\transformed\core-1.6.0\res
-com.example.time_table_maker_app-jetified-annotation-experimental-1.1.0-3 C:\Users\acer\.gradle\caches\transforms-3\8965c941cf4bee4d72541b965c7c9d39\transformed\jetified-annotation-experimental-1.1.0\res
-com.example.time_table_maker_app-jetified-window-1.0.0-beta04-4 C:\Users\acer\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\res
-com.example.time_table_maker_app-main-5 E:\time_table_maker_app (2)\time_table_maker_app\android\app\src\main\res
-com.example.time_table_maker_app-release-6 E:\time_table_maker_app (2)\time_table_maker_app\android\app\src\release\res
-com.example.time_table_maker_app-pngs-7 E:\time_table_maker_app (2)\time_table_maker_app\build\app\generated\res\pngs\release
-com.example.time_table_maker_app-resValues-8 E:\time_table_maker_app (2)\time_table_maker_app\build\app\generated\res\resValues\release
-com.example.time_table_maker_app-rs-9 E:\time_table_maker_app (2)\time_table_maker_app\build\app\generated\res\rs\release
-com.example.time_table_maker_app-mergeReleaseResources-10 E:\time_table_maker_app (2)\time_table_maker_app\build\app\intermediates\incremental\release\mergeReleaseResources\merged.dir
-com.example.time_table_maker_app-mergeReleaseResources-11 E:\time_table_maker_app (2)\time_table_maker_app\build\app\intermediates\incremental\release\mergeReleaseResources\stripped.dir
-com.example.time_table_maker_app-merged_res-12 E:\time_table_maker_app (2)\time_table_maker_app\build\app\intermediates\merged_res\release
-com.example.time_table_maker_app-packaged_res-13 E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\packaged_res\release
-com.example.time_table_maker_app-packaged_res-14 E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_native_timezone\intermediates\packaged_res\release
-com.example.time_table_maker_app-packaged_res-15 E:\time_table_maker_app (2)\time_table_maker_app\build\path_provider_android\intermediates\packaged_res\release
-com.example.time_table_maker_app-packaged_res-16 E:\time_table_maker_app (2)\time_table_maker_app\build\sqflite\intermediates\packaged_res\release
+com.example.time_table_maker_app-jetified-window-java-1.0.0-beta04-0 C:\Users\acer\.gradle\caches\transforms-3\0453bb352c73c4cfd2f7f548d9d96374\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.time_table_maker_app-media-1.1.0-1 C:\Users\acer\.gradle\caches\transforms-3\35a4d9deef986505ae8f8d270c245025\transformed\media-1.1.0\res
+com.example.time_table_maker_app-jetified-play-services-basement-18.1.0-2 C:\Users\acer\.gradle\caches\transforms-3\40093f50956da5c3a8aef971092f264f\transformed\jetified-play-services-basement-18.1.0\res
+com.example.time_table_maker_app-jetified-window-1.0.0-beta04-3 C:\Users\acer\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\res
+com.example.time_table_maker_app-core-1.6.0-4 C:\Users\acer\.gradle\caches\transforms-3\68f19437d0737a31487785fad0f2a02f\transformed\core-1.6.0\res
+com.example.time_table_maker_app-jetified-annotation-experimental-1.1.0-5 C:\Users\acer\.gradle\caches\transforms-3\770848d9ea980ddcb3dfb30e739c7726\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.time_table_maker_app-jetified-firebase-common-20.3.3-6 C:\Users\acer\.gradle\caches\transforms-3\8293aa33d3d0e39150846844020fe23e\transformed\jetified-firebase-common-20.3.3\res
+com.example.time_table_maker_app-localbroadcastmanager-1.1.0-7 C:\Users\acer\.gradle\caches\transforms-3\a38b7365f8e3ccdc4438c1d140968956\transformed\localbroadcastmanager-1.1.0\res
+com.example.time_table_maker_app-jetified-firebase-messaging-23.2.0-8 C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\res
+com.example.time_table_maker_app-jetified-play-services-base-18.0.1-9 C:\Users\acer\.gradle\caches\transforms-3\dd0e7a35c9baa53258d7d9a0b7dd7ddd\transformed\jetified-play-services-base-18.0.1\res
+com.example.time_table_maker_app-main-10 E:\time_table_maker_app (2)\time_table_maker_app\android\app\src\main\res
+com.example.time_table_maker_app-release-11 E:\time_table_maker_app (2)\time_table_maker_app\android\app\src\release\res
+com.example.time_table_maker_app-google-services-12 E:\time_table_maker_app (2)\time_table_maker_app\build\app\generated\res\google-services\release
+com.example.time_table_maker_app-pngs-13 E:\time_table_maker_app (2)\time_table_maker_app\build\app\generated\res\pngs\release
+com.example.time_table_maker_app-resValues-14 E:\time_table_maker_app (2)\time_table_maker_app\build\app\generated\res\resValues\release
+com.example.time_table_maker_app-rs-15 E:\time_table_maker_app (2)\time_table_maker_app\build\app\generated\res\rs\release
+com.example.time_table_maker_app-mergeReleaseResources-16 E:\time_table_maker_app (2)\time_table_maker_app\build\app\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.example.time_table_maker_app-mergeReleaseResources-17 E:\time_table_maker_app (2)\time_table_maker_app\build\app\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.example.time_table_maker_app-merged_res-18 E:\time_table_maker_app (2)\time_table_maker_app\build\app\intermediates\merged_res\release
+com.example.time_table_maker_app-packaged_res-19 E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_core\intermediates\packaged_res\release
+com.example.time_table_maker_app-packaged_res-20 E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\packaged_res\release
+com.example.time_table_maker_app-packaged_res-21 E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\packaged_res\release
+com.example.time_table_maker_app-packaged_res-22 E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\packaged_res\release
+com.example.time_table_maker_app-packaged_res-23 E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_native_timezone\intermediates\packaged_res\release
+com.example.time_table_maker_app-packaged_res-24 E:\time_table_maker_app (2)\time_table_maker_app\build\path_provider_android\intermediates\packaged_res\release
+com.example.time_table_maker_app-packaged_res-25 E:\time_table_maker_app (2)\time_table_maker_app\build\sqflite\intermediates\packaged_res\release

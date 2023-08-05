@@ -30,323 +30,579 @@
 20    <uses-permission android:name="android.permission.VIBRATE" />
 20-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-66
 20-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-63
-21    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+21    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
 21-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-81
 21-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-78
-22    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-22-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:28:5-82
-22-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:28:22-79
-23    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-23-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\f84c462d406beac4ae95c4b6250d416a\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:25:5-79
-23-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\f84c462d406beac4ae95c4b6250d416a\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:25:22-76
-24    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-24-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:5-110
-24-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:22-107
-25
-26    <application
-27        android:name="android.app.Application"
-28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-28-->[androidx.core:core:1.6.0] C:\Users\acer\.gradle\caches\transforms-3\68f19437d0737a31487785fad0f2a02f\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
-29        android:debuggable="true"
-30        android:icon="@mipmap/ic_launcher"
-31        android:label="time_table_maker_app" >
-32        <activity
-33            android:name="com.example.time_table_maker_app.MainActivity"
-34            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-35            android:exported="true"
-36            android:hardwareAccelerated="true"
-37            android:launchMode="singleTop"
-38            android:theme="@style/LaunchTheme"
-39            android:windowSoftInputMode="adjustResize" >
-40
-41            <!--
-42                 Specifies an Android theme to apply to this Activity as soon as
-43                 the Android process has started. This theme is visible to the user
-44                 while the Flutter UI initializes. After that, this theme continues
-45                 to determine the Window background behind the Flutter UI.
-46            -->
-47            <meta-data
-48                android:name="io.flutter.embedding.android.NormalTheme"
-49                android:resource="@style/NormalTheme" />
-50
-51            <intent-filter>
-52                <action android:name="android.intent.action.MAIN" />
-53
-54                <category android:name="android.intent.category.LAUNCHER" />
-55            </intent-filter>
-56        </activity>
-57        <!--
-58             Don't delete the meta-data below.
-59             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-60        -->
-61        <meta-data
-62            android:name="flutterEmbedding"
-63            android:value="2" />
-64
-65        <service
-65-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-19:72
-66            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
-66-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-107
-67            android:exported="false"
-67-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
-68            android:permission="android.permission.BIND_JOB_SERVICE" />
-68-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-69
-69        <service
-69-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-26:19
-70            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
-70-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-97
-71            android:exported="false" >
-71-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
-72            <intent-filter>
-72-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
-73                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-73-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
-73-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
-74            </intent-filter>
-75        </service>
-76
-77        <receiver
-77-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-35:20
-78            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
-78-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-98
-79            android:exported="true"
-79-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-36
-80            android:permission="com.google.android.c2dm.permission.SEND" >
-80-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-73
-81            <intent-filter>
-81-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
-82                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-82-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
-82-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
-83            </intent-filter>
-84        </receiver>
-85
-86        <service
-86-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:9-41:19
-87            android:name="com.google.firebase.components.ComponentDiscoveryService"
-87-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:18-89
-88            android:directBootAware="true"
-88-->[com.google.firebase:firebase-common:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\8293aa33d3d0e39150846844020fe23e\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:34:13-43
-89            android:exported="false" >
-89-->[com.google.firebase:firebase-analytics-ktx:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\52ef559e36ec39059223f2064d8d597d\transformed\jetified-firebase-analytics-ktx-21.3.0\AndroidManifest.xml:10:13-37
-90            <meta-data
-90-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-40:85
-91                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
-91-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:39:17-128
-92                android:value="com.google.firebase.components.ComponentRegistrar" />
-92-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:40:17-82
-93            <meta-data
-93-->[:firebase_core] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
-94                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-94-->[:firebase_core] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
-95                android:value="com.google.firebase.components.ComponentRegistrar" />
-95-->[:firebase_core] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
-96            <meta-data
-96-->[com.google.firebase:firebase-analytics-ktx:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\52ef559e36ec39059223f2064d8d597d\transformed\jetified-firebase-analytics-ktx-21.3.0\AndroidManifest.xml:11:13-13:85
-97                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
-97-->[com.google.firebase:firebase-analytics-ktx:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\52ef559e36ec39059223f2064d8d597d\transformed\jetified-firebase-analytics-ktx-21.3.0\AndroidManifest.xml:12:17-126
-98                android:value="com.google.firebase.components.ComponentRegistrar" />
-98-->[com.google.firebase:firebase-analytics-ktx:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\52ef559e36ec39059223f2064d8d597d\transformed\jetified-firebase-analytics-ktx-21.3.0\AndroidManifest.xml:13:17-82
-99            <meta-data
-99-->[com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\12a288e64267cba1696b7dc4711b8f0c\transformed\jetified-firebase-common-ktx-20.3.3\AndroidManifest.xml:14:13-16:85
-100                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-100-->[com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\12a288e64267cba1696b7dc4711b8f0c\transformed\jetified-firebase-common-ktx-20.3.3\AndroidManifest.xml:15:17-113
-101                android:value="com.google.firebase.components.ComponentRegistrar" />
-101-->[com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\12a288e64267cba1696b7dc4711b8f0c\transformed\jetified-firebase-common-ktx-20.3.3\AndroidManifest.xml:16:17-82
-102            <meta-data
-102-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:55:13-57:85
-103                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-103-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:56:17-119
-104                android:value="com.google.firebase.components.ComponentRegistrar" />
-104-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:57:17-82
-105            <meta-data
-105-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\acer\.gradle\caches\transforms-3\d3b6babd6938bbfacaad1ff5cccfe90d\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
-106                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-106-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\acer\.gradle\caches\transforms-3\d3b6babd6938bbfacaad1ff5cccfe90d\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
-107                android:value="com.google.firebase.components.ComponentRegistrar" />
-107-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\acer\.gradle\caches\transforms-3\d3b6babd6938bbfacaad1ff5cccfe90d\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
-108            <meta-data
-108-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\f84c462d406beac4ae95c4b6250d416a\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:31:13-33:85
-109                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-109-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\f84c462d406beac4ae95c4b6250d416a\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:32:17-139
-110                android:value="com.google.firebase.components.ComponentRegistrar" />
-110-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\f84c462d406beac4ae95c4b6250d416a\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:33:17-82
-111            <meta-data
-111-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\acer\.gradle\caches\transforms-3\8d8722449c8eedf64e33ce74e944ca67\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
-112                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-112-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\acer\.gradle\caches\transforms-3\8d8722449c8eedf64e33ce74e944ca67\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
-113                android:value="com.google.firebase.components.ComponentRegistrar" />
-113-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\acer\.gradle\caches\transforms-3\8d8722449c8eedf64e33ce74e944ca67\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
-114        </service>
-115
-116        <provider
-116-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-47:38
-117            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-117-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-102
-118            android:authorities="com.example.time_table_maker_app.flutterfirebasemessaginginitprovider"
-118-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-88
-119            android:exported="false"
-119-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-37
-120            android:initOrder="99" />
-120-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-35
+22    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+22-->[:flutter_background_service_android] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-77
+22-->[:flutter_background_service_android] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-74
+23    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+23-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:28:5-82
+23-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:28:22-79
+24    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+24-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\f84c462d406beac4ae95c4b6250d416a\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:25:5-79
+24-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\f84c462d406beac4ae95c4b6250d416a\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:25:22-76
+25    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+25-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:5-110
+25-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:22-107
+26
+27    <application
+28        android:name="android.app.Application"
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.6.0] C:\Users\acer\.gradle\caches\transforms-3\68f19437d0737a31487785fad0f2a02f\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+30        android:debuggable="true"
+31        android:icon="@mipmap/ic_launcher"
+32        android:label="time_table_maker_app" >
+33        <activity
+34            android:name="com.example.time_table_maker_app.MainActivity"
+35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+36            android:exported="true"
+37            android:hardwareAccelerated="true"
+38            android:launchMode="singleTop"
+39            android:theme="@style/LaunchTheme"
+40            android:windowSoftInputMode="adjustResize" >
+41
+42            <!--
+43                 Specifies an Android theme to apply to this Activity as soon as
+44                 the Android process has started. This theme is visible to the user
+45                 while the Flutter UI initializes. After that, this theme continues
+46                 to determine the Window background behind the Flutter UI.
+47            -->
+48            <meta-data
+49                android:name="io.flutter.embedding.android.NormalTheme"
+50                android:resource="@style/NormalTheme" />
+51
+52            <intent-filter>
+53                <action android:name="android.intent.action.MAIN" />
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+56            </intent-filter>
+57        </activity>
+58        <!--
+59             Don't delete the meta-data below.
+60             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+61        -->
+62        <meta-data
+63            android:name="flutterEmbedding"
+64            android:value="2" />
+65
+66        <service
+66-->[:firebase_database] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+67            android:name="com.google.firebase.components.ComponentDiscoveryService"
+67-->[:firebase_database] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+68            android:directBootAware="true"
+68-->[com.google.firebase:firebase-common:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\8293aa33d3d0e39150846844020fe23e\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:34:13-43
+69            android:exported="false" >
+69-->[com.google.firebase:firebase-analytics-ktx:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\52ef559e36ec39059223f2064d8d597d\transformed\jetified-firebase-analytics-ktx-21.3.0\AndroidManifest.xml:10:13-37
+70            <meta-data
+70-->[:firebase_database] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+71                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
+71-->[:firebase_database] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-127
+72                android:value="com.google.firebase.components.ComponentRegistrar" />
+72-->[:firebase_database] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+73            <meta-data
+73-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-40:85
+74                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+74-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:39:17-128
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:40:17-82
+76            <meta-data
+76-->[:firebase_core] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+77                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+77-->[:firebase_core] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[:firebase_core] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+79            <meta-data
+79-->[com.google.firebase:firebase-analytics-ktx:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\52ef559e36ec39059223f2064d8d597d\transformed\jetified-firebase-analytics-ktx-21.3.0\AndroidManifest.xml:11:13-13:85
+80                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+80-->[com.google.firebase:firebase-analytics-ktx:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\52ef559e36ec39059223f2064d8d597d\transformed\jetified-firebase-analytics-ktx-21.3.0\AndroidManifest.xml:12:17-126
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.firebase:firebase-analytics-ktx:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\52ef559e36ec39059223f2064d8d597d\transformed\jetified-firebase-analytics-ktx-21.3.0\AndroidManifest.xml:13:17-82
+82            <meta-data
+82-->[com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\12a288e64267cba1696b7dc4711b8f0c\transformed\jetified-firebase-common-ktx-20.3.3\AndroidManifest.xml:14:13-16:85
+83                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+83-->[com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\12a288e64267cba1696b7dc4711b8f0c\transformed\jetified-firebase-common-ktx-20.3.3\AndroidManifest.xml:15:17-113
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\12a288e64267cba1696b7dc4711b8f0c\transformed\jetified-firebase-common-ktx-20.3.3\AndroidManifest.xml:16:17-82
+85            <meta-data
+85-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:55:13-57:85
+86                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+86-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:56:17-119
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:57:17-82
+88            <meta-data
+88-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\acer\.gradle\caches\transforms-3\d3b6babd6938bbfacaad1ff5cccfe90d\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+89                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+89-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\acer\.gradle\caches\transforms-3\d3b6babd6938bbfacaad1ff5cccfe90d\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\acer\.gradle\caches\transforms-3\d3b6babd6938bbfacaad1ff5cccfe90d\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+91            <meta-data
+91-->[com.google.firebase:firebase-database:20.2.2] C:\Users\acer\.gradle\caches\transforms-3\0d1d9f8a4ce0d8f1f0e4024f399d7d1e\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:31:13-33:85
+92                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+92-->[com.google.firebase:firebase-database:20.2.2] C:\Users\acer\.gradle\caches\transforms-3\0d1d9f8a4ce0d8f1f0e4024f399d7d1e\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:32:17-109
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[com.google.firebase:firebase-database:20.2.2] C:\Users\acer\.gradle\caches\transforms-3\0d1d9f8a4ce0d8f1f0e4024f399d7d1e\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:33:17-82
+94            <meta-data
+94-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\f84c462d406beac4ae95c4b6250d416a\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:31:13-33:85
+95                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+95-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\f84c462d406beac4ae95c4b6250d416a\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:32:17-139
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\f84c462d406beac4ae95c4b6250d416a\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:33:17-82
+97            <meta-data
+97-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\acer\.gradle\caches\transforms-3\8d8722449c8eedf64e33ce74e944ca67\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+98                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+98-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\acer\.gradle\caches\transforms-3\8d8722449c8eedf64e33ce74e944ca67\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\acer\.gradle\caches\transforms-3\8d8722449c8eedf64e33ce74e944ca67\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+100        </service>
+101        <service
+101-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-19:72
+102            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+102-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-107
+103            android:exported="false"
+103-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+104            android:permission="android.permission.BIND_JOB_SERVICE" />
+104-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-69
+105        <service
+105-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-26:19
+106            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+106-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-97
+107            android:exported="false" >
+107-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+108            <intent-filter>
+108-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+109                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+109-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+109-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+110            </intent-filter>
+111        </service>
+112
+113        <receiver
+113-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-35:20
+114            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+114-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-98
+115            android:exported="true"
+115-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-36
+116            android:permission="com.google.android.c2dm.permission.SEND" >
+116-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-73
+117            <intent-filter>
+117-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+118                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+118-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+118-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+119            </intent-filter>
+120        </receiver>
 121
-122        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
-122-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-106
-122-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:14:19-103
-123        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver" >
-123-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-22:20
-123-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:15:19-107
-124            <intent-filter>
-124-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-21:29
-125                <action android:name="android.intent.action.BOOT_COMPLETED" />
-125-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-79
-125-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:25-76
-126                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-126-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:17-84
-126-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:25-81
-127                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-127-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:17-82
-127-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:25-79
-128                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
-128-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:17-82
-128-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:25-79
-129            </intent-filter>
-130        </receiver>
-131
-132        <uses-library
-132-->[androidx.window:window:1.0.0-beta04] C:\Users\acer\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
-133            android:name="androidx.window.extensions"
-133-->[androidx.window:window:1.0.0-beta04] C:\Users\acer\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
-134            android:required="false" />
-134-->[androidx.window:window:1.0.0-beta04] C:\Users\acer\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
-135        <uses-library
-135-->[androidx.window:window:1.0.0-beta04] C:\Users\acer\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
-136            android:name="androidx.window.sidecar"
-136-->[androidx.window:window:1.0.0-beta04] C:\Users\acer\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
-137            android:required="false" />
-137-->[androidx.window:window:1.0.0-beta04] C:\Users\acer\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
-138
-139        <receiver
-139-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:31:9-38:20
-140            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-140-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:32:13-78
+122        <provider
+122-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-47:38
+123            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+123-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-102
+124            android:authorities="com.example.time_table_maker_app.flutterfirebasemessaginginitprovider"
+124-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-88
+125            android:exported="false"
+125-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-37
+126            android:initOrder="99" />
+126-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-35
+127
+128        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
+128-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-106
+128-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:14:19-103
+129        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver" >
+129-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-22:20
+129-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:15:19-107
+130            <intent-filter>
+130-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-21:29
+131                <action android:name="android.intent.action.BOOT_COMPLETED" />
+131-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-79
+131-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:25-76
+132                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+132-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:17-84
+132-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:25-81
+133                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+133-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:17-82
+133-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:25-79
+134                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+134-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:17-82
+134-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:25-79
+135            </intent-filter>
+136        </receiver>
+137
+138        <service
+138-->[:flutter_background_service_android] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-18:44
+139            android:name="id.flutter.flutter_background_service.BackgroundService"
+139-->[:flutter_background_service_android] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-83
+140            android:enabled="true"
+140-->[:flutter_background_service_android] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-35
 141            android:exported="true"
-141-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:33:13-36
-142            android:permission="com.google.android.c2dm.permission.SEND" >
-142-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:34:13-73
-143            <intent-filter>
-143-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
-144                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-144-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
-144-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
-145            </intent-filter>
-146        </receiver>
-147        <!--
-148             FirebaseMessagingService performs security checks at runtime,
-149             but set to not exported to explicitly avoid allowing another app to call it.
-150        -->
-151        <service
-151-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:44:9-51:19
-152            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-152-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:45:13-82
-153            android:directBootAware="true"
-153-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:46:13-43
-154            android:exported="false" >
-154-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:47:13-37
-155            <intent-filter android:priority="-500" >
-155-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
-156                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-156-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
-156-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
-157            </intent-filter>
-158        </service>
-159        <service
-159-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
-160            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-160-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
-161            android:exported="false" >
-161-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
-162            <meta-data
-162-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
-163                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-163-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
-164                android:value="cct" />
-164-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
-165        </service>
-166        <service
-166-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
-167            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-167-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
-168            android:exported="false"
-168-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
-169            android:permission="android.permission.BIND_JOB_SERVICE" >
-169-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
-170        </service>
-171
-172        <receiver
-172-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
-173            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-173-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
-174            android:exported="false" />
-174-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
-175
-176        <provider
-176-->[com.google.firebase:firebase-common:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\8293aa33d3d0e39150846844020fe23e\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
-177            android:name="com.google.firebase.provider.FirebaseInitProvider"
-177-->[com.google.firebase:firebase-common:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\8293aa33d3d0e39150846844020fe23e\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:26:13-77
-178            android:authorities="com.example.time_table_maker_app.firebaseinitprovider"
-178-->[com.google.firebase:firebase-common:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\8293aa33d3d0e39150846844020fe23e\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:27:13-72
+141-->[:flutter_background_service_android] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-36
+142            android:stopWithTask="false" />
+142-->[:flutter_background_service_android] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-41
+143
+144        <receiver
+144-->[:flutter_background_service_android] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-23:39
+145            android:name="id.flutter.flutter_background_service.WatchdogReceiver"
+145-->[:flutter_background_service_android] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-82
+146            android:enabled="true"
+146-->[:flutter_background_service_android] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-35
+147            android:exported="true" />
+147-->[:flutter_background_service_android] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-36
+148        <receiver
+148-->[:flutter_background_service_android] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:24:9-32:20
+149            android:name="id.flutter.flutter_background_service.BootReceiver"
+149-->[:flutter_background_service_android] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-78
+150            android:enabled="true"
+150-->[:flutter_background_service_android] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-35
+151            android:exported="true" >
+151-->[:flutter_background_service_android] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-36
+152            <intent-filter>
+152-->[:flutter_background_service_android] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_background_service_android\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-31:29
+153                <action android:name="android.intent.action.BOOT_COMPLETED" />
+153-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-79
+153-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:25-76
+154                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+154-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:17-82
+154-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:25-79
+155            </intent-filter>
+156        </receiver>
+157
+158        <uses-library
+158-->[androidx.window:window:1.0.0-beta04] C:\Users\acer\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+159            android:name="androidx.window.extensions"
+159-->[androidx.window:window:1.0.0-beta04] C:\Users\acer\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+160            android:required="false" />
+160-->[androidx.window:window:1.0.0-beta04] C:\Users\acer\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+161        <uses-library
+161-->[androidx.window:window:1.0.0-beta04] C:\Users\acer\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+162            android:name="androidx.window.sidecar"
+162-->[androidx.window:window:1.0.0-beta04] C:\Users\acer\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+163            android:required="false" />
+163-->[androidx.window:window:1.0.0-beta04] C:\Users\acer\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+164
+165        <receiver
+165-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:31:9-38:20
+166            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+166-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:32:13-78
+167            android:exported="true"
+167-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:33:13-36
+168            android:permission="com.google.android.c2dm.permission.SEND" >
+168-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:34:13-73
+169            <intent-filter>
+169-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+170                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+170-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+170-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+171            </intent-filter>
+172        </receiver>
+173        <!--
+174             FirebaseMessagingService performs security checks at runtime,
+175             but set to not exported to explicitly avoid allowing another app to call it.
+176        -->
+177        <service
+177-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:44:9-51:19
+178            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+178-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:45:13-82
 179            android:directBootAware="true"
-179-->[com.google.firebase:firebase-common:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\8293aa33d3d0e39150846844020fe23e\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:28:13-43
-180            android:exported="false"
-180-->[com.google.firebase:firebase-common:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\8293aa33d3d0e39150846844020fe23e\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:29:13-37
-181            android:initOrder="100" />
-181-->[com.google.firebase:firebase-common:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\8293aa33d3d0e39150846844020fe23e\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:30:13-36
-182
-183        <receiver
-183-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:29:9-33:20
-184            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-184-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:30:13-85
-185            android:enabled="true"
-185-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:31:13-35
-186            android:exported="false" >
-186-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:32:13-37
-187        </receiver>
-188
-189        <service
-189-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:35:9-38:40
-190            android:name="com.google.android.gms.measurement.AppMeasurementService"
-190-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:36:13-84
-191            android:enabled="true"
-191-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:37:13-35
-192            android:exported="false" />
-192-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:38:13-37
-193        <service
-193-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:39:9-43:72
-194            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-194-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:40:13-87
-195            android:enabled="true"
-195-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:41:13-35
-196            android:exported="false"
-196-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:42:13-37
-197            android:permission="android.permission.BIND_JOB_SERVICE" />
-197-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:43:13-69
-198
-199        <activity
-199-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\acer\.gradle\caches\transforms-3\dd0e7a35c9baa53258d7d9a0b7dd7ddd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-200            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-200-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\acer\.gradle\caches\transforms-3\dd0e7a35c9baa53258d7d9a0b7dd7ddd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-201            android:exported="false"
-201-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\acer\.gradle\caches\transforms-3\dd0e7a35c9baa53258d7d9a0b7dd7ddd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-202            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-202-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\acer\.gradle\caches\transforms-3\dd0e7a35c9baa53258d7d9a0b7dd7ddd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-203
-204        <meta-data
-204-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\acer\.gradle\caches\transforms-3\40093f50956da5c3a8aef971092f264f\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-205            android:name="com.google.android.gms.version"
-205-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\acer\.gradle\caches\transforms-3\40093f50956da5c3a8aef971092f264f\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-206            android:value="@integer/google_play_services_version" />
-206-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\acer\.gradle\caches\transforms-3\40093f50956da5c3a8aef971092f264f\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
-207    </application>
-208
-209</manifest>
+179-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:46:13-43
+180            android:exported="false" >
+180-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\acer\.gradle\caches\transforms-3\c6888039306d6428158be7f367127262\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:47:13-37
+181            <intent-filter android:priority="-500" >
+181-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+182                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+182-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+182-->[:firebase_messaging] E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+183            </intent-filter>
+184        </service>
+185        <service
+185-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+186            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+186-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+187            android:exported="false" >
+187-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+188            <meta-data
+188-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+189                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+189-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+190                android:value="cct" />
+190-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+191        </service>
+192        <service
+192-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+193            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+193-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+194            android:exported="false"
+194-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+195            android:permission="android.permission.BIND_JOB_SERVICE" >
+195-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+196        </service>
+197
+198        <receiver
+198-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+199            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+199-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+200            android:exported="false" />
+200-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\acer\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+201
+202        <provider
+202-->[com.google.firebase:firebase-common:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\8293aa33d3d0e39150846844020fe23e\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
+203            android:name="com.google.firebase.provider.FirebaseInitProvider"
+203-->[com.google.firebase:firebase-common:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\8293aa33d3d0e39150846844020fe23e\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:26:13-77
+204            android:authorities="com.example.time_table_maker_app.firebaseinitprovider"
+204-->[com.google.firebase:firebase-common:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\8293aa33d3d0e39150846844020fe23e\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:27:13-72
+205            android:directBootAware="true"
+205-->[com.google.firebase:firebase-common:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\8293aa33d3d0e39150846844020fe23e\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:28:13-43
+206            android:exported="false"
+206-->[com.google.firebase:firebase-common:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\8293aa33d3d0e39150846844020fe23e\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:29:13-37
+207            android:initOrder="100" />
+207-->[com.google.firebase:firebase-common:20.3.3] C:\Users\acer\.gradle\caches\transforms-3\8293aa33d3d0e39150846844020fe23e\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:30:13-36
+208        <provider
+208-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:31:9-39:20
+209            android:name="androidx.startup.InitializationProvider"
+209-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:32:13-67
+210            android:authorities="com.example.time_table_maker_app.androidx-startup"
+210-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:33:13-68
+211            android:exported="false" >
+211-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:34:13-37
+212            <meta-data
+212-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:36:13-38:52
+213                android:name="androidx.work.WorkManagerInitializer"
+213-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:37:17-68
+214                android:value="androidx.startup" />
+214-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:38:17-49
+215        </provider>
+216
+217        <service
+217-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:41:9-46:35
+218            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+218-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:42:13-88
+219            android:directBootAware="false"
+219-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:43:13-44
+220            android:enabled="@bool/enable_system_alarm_service_default"
+220-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:44:13-72
+221            android:exported="false" />
+221-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:45:13-37
+222        <service
+222-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:47:9-53:35
+223            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+223-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:48:13-84
+224            android:directBootAware="false"
+224-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:49:13-44
+225            android:enabled="@bool/enable_system_job_service_default"
+225-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:50:13-70
+226            android:exported="true"
+226-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:51:13-36
+227            android:permission="android.permission.BIND_JOB_SERVICE" />
+227-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:52:13-69
+228        <service
+228-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:54:9-59:35
+229            android:name="androidx.work.impl.foreground.SystemForegroundService"
+229-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:55:13-81
+230            android:directBootAware="false"
+230-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:56:13-44
+231            android:enabled="@bool/enable_system_foreground_service_default"
+231-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:57:13-77
+232            android:exported="false" />
+232-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:58:13-37
+233
+234        <receiver
+234-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:61:9-66:35
+235            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+235-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:62:13-88
+236            android:directBootAware="false"
+236-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:63:13-44
+237            android:enabled="true"
+237-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:64:13-35
+238            android:exported="false" />
+238-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:65:13-37
+239        <receiver
+239-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:67:9-77:20
+240            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+240-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:68:13-106
+241            android:directBootAware="false"
+241-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:69:13-44
+242            android:enabled="false"
+242-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:70:13-36
+243            android:exported="false" >
+243-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:71:13-37
+244            <intent-filter>
+244-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:73:13-76:29
+245                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+245-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:17-87
+245-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:25-84
+246                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+246-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:17-90
+246-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:25-87
+247            </intent-filter>
+248        </receiver>
+249        <receiver
+249-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:78:9-88:20
+250            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+250-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:79:13-104
+251            android:directBootAware="false"
+251-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:80:13-44
+252            android:enabled="false"
+252-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:81:13-36
+253            android:exported="false" >
+253-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:82:13-37
+254            <intent-filter>
+254-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:84:13-87:29
+255                <action android:name="android.intent.action.BATTERY_OKAY" />
+255-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:17-77
+255-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:25-74
+256                <action android:name="android.intent.action.BATTERY_LOW" />
+256-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:17-76
+256-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:25-73
+257            </intent-filter>
+258        </receiver>
+259        <receiver
+259-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:89:9-99:20
+260            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+260-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:90:13-104
+261            android:directBootAware="false"
+261-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:91:13-44
+262            android:enabled="false"
+262-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:92:13-36
+263            android:exported="false" >
+263-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:93:13-37
+264            <intent-filter>
+264-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:95:13-98:29
+265                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+265-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:17-83
+265-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:25-80
+266                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+266-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:17-82
+266-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:25-79
+267            </intent-filter>
+268        </receiver>
+269        <receiver
+269-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:100:9-109:20
+270            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+270-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:101:13-103
+271            android:directBootAware="false"
+271-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:102:13-44
+272            android:enabled="false"
+272-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:103:13-36
+273            android:exported="false" >
+273-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:104:13-37
+274            <intent-filter>
+274-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:106:13-108:29
+275                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+275-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:17-79
+275-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:25-76
+276            </intent-filter>
+277        </receiver>
+278        <receiver
+278-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:110:9-121:20
+279            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+279-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:111:13-88
+280            android:directBootAware="false"
+280-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:112:13-44
+281            android:enabled="false"
+281-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:113:13-36
+282            android:exported="false" >
+282-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:114:13-37
+283            <intent-filter>
+283-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:116:13-120:29
+284                <action android:name="android.intent.action.BOOT_COMPLETED" />
+284-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-79
+284-->[:flutter_local_notifications] E:\time_table_maker_app (2)\time_table_maker_app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:25-76
+285                <action android:name="android.intent.action.TIME_SET" />
+285-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:17-73
+285-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:25-70
+286                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+286-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:17-81
+286-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:25-78
+287            </intent-filter>
+288        </receiver>
+289        <receiver
+289-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:122:9-131:20
+290            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+290-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:123:13-99
+291            android:directBootAware="false"
+291-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:124:13-44
+292            android:enabled="@bool/enable_system_alarm_service_default"
+292-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:125:13-72
+293            android:exported="false" >
+293-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:126:13-37
+294            <intent-filter>
+294-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:128:13-130:29
+295                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+295-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:17-98
+295-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:25-95
+296            </intent-filter>
+297        </receiver>
+298        <receiver
+298-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:132:9-142:20
+299            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+299-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:133:13-78
+300            android:directBootAware="false"
+300-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:134:13-44
+301            android:enabled="true"
+301-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:135:13-35
+302            android:exported="true"
+302-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:136:13-36
+303            android:permission="android.permission.DUMP" >
+303-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:137:13-57
+304            <intent-filter>
+304-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:139:13-141:29
+305                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+305-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:17-88
+305-->[androidx.work:work-runtime:2.7.1] C:\Users\acer\.gradle\caches\transforms-3\64ede3602b3b49aafbd9413ce4d51867\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:25-85
+306            </intent-filter>
+307        </receiver>
+308
+309        <activity
+309-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\acer\.gradle\caches\transforms-3\ef8712ee1074f73d13d4036f972d12f3\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+310            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+310-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\acer\.gradle\caches\transforms-3\ef8712ee1074f73d13d4036f972d12f3\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+311            android:exported="false"
+311-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\acer\.gradle\caches\transforms-3\ef8712ee1074f73d13d4036f972d12f3\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+312            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+312-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\acer\.gradle\caches\transforms-3\ef8712ee1074f73d13d4036f972d12f3\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+313
+314        <receiver
+314-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:29:9-33:20
+315            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+315-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:30:13-85
+316            android:enabled="true"
+316-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:31:13-35
+317            android:exported="false" >
+317-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:32:13-37
+318        </receiver>
+319
+320        <service
+320-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:35:9-38:40
+321            android:name="com.google.android.gms.measurement.AppMeasurementService"
+321-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:36:13-84
+322            android:enabled="true"
+322-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:37:13-35
+323            android:exported="false" />
+323-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:38:13-37
+324        <service
+324-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:39:9-43:72
+325            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+325-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:40:13-87
+326            android:enabled="true"
+326-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:41:13-35
+327            android:exported="false"
+327-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:42:13-37
+328            android:permission="android.permission.BIND_JOB_SERVICE" />
+328-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\acer\.gradle\caches\transforms-3\679790e145595c512c6ae5285a6fe801\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:43:13-69
+329
+330        <meta-data
+330-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\acer\.gradle\caches\transforms-3\40093f50956da5c3a8aef971092f264f\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+331            android:name="com.google.android.gms.version"
+331-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\acer\.gradle\caches\transforms-3\40093f50956da5c3a8aef971092f264f\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+332            android:value="@integer/google_play_services_version" />
+332-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\acer\.gradle\caches\transforms-3\40093f50956da5c3a8aef971092f264f\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+333
+334        <service
+334-->[androidx.room:room-runtime:2.2.5] C:\Users\acer\.gradle\caches\transforms-3\2cfef97aeb58335d02b2f5d3e5b6fb15\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+335            android:name="androidx.room.MultiInstanceInvalidationService"
+335-->[androidx.room:room-runtime:2.2.5] C:\Users\acer\.gradle\caches\transforms-3\2cfef97aeb58335d02b2f5d3e5b6fb15\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+336            android:directBootAware="true"
+336-->[androidx.room:room-runtime:2.2.5] C:\Users\acer\.gradle\caches\transforms-3\2cfef97aeb58335d02b2f5d3e5b6fb15\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+337            android:exported="false" />
+337-->[androidx.room:room-runtime:2.2.5] C:\Users\acer\.gradle\caches\transforms-3\2cfef97aeb58335d02b2f5d3e5b6fb15\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+338    </application>
+339
+340</manifest>

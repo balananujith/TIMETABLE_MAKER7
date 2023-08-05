@@ -2,22 +2,71 @@ import 'package:flutter/material.dart';
 import 'package:time_table_maker_app/screens.dart/edit.dart';
 import 'package:time_table_maker_app/screens.dart/view.dart';
 import 'package:time_table_maker_app/screens.dart/notifications1.dart';
-  AppBar _appBar() {
-  return AppBar(
-    elevation: 0,
-    title: const Text('TIMETABLE MAKER APP'),
-    backgroundColor: Colors.blue,
-    actions: const [
-      CircleAvatar(
-        backgroundImage: AssetImage('assets/timetable.png'),
-      ),
-      SizedBox(width: 20),
-    ],
-  );
+import '../controllers/task_controllers.dart';
+import 'package:get/get.dart';
+import 'package:time_table_maker_app/main.dart';
+import 'package:time_table_maker_app/models/task.dart';
+import 'package:intl/intl.dart';
+
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class _HomeScreenState extends State<HomeScreen> {
+  final TaskController _taskController = Get.put(TaskController());
+
+  @override
+  void initState() {
+    super.initState();
+    init();
+  }
+
+  // Use async function to wait for getTasks() to complete
+  Future<void> init() async {
+    await _taskController.getTasks();
+    getTask(); // Call your function here when the widget is initialized
+  }
+
+  void getTask() {
+    final DateTime now = DateTime.now();
+    final String formattedNow = DateFormat('hh:mm a').format(now);
+
+    for (var task in _taskController.taskList) {
+      final String? startTime = task.startTime;
+      final String? title = task.title;
+      final String? note = task.note;
+      final int? remind = task.remind;
+
+      print('$title');
+      if (startTime != null && title != null && note != null) {
+        final String taskStartTime12Hrs = startTime;
+        final Duration timeDifference = DateFormat('hh:mm a').parse(taskStartTime12Hrs).difference(DateFormat('hh:mm a').parse(formattedNow));
+        final Duration remindDuration = remind != null ? Duration(minutes: remind) : Duration.zero; // Set a default value if remind is null
+        print("time now: $now");
+        print("timedifference : $timeDifference");
+        if (timeDifference == remindDuration && timeDifference.isNegative == false) {
+          showNotification(title,startTime);
+        }
+      }
+    }
+  }
+
+  AppBar _appBar() {
+    return AppBar(
+      elevation: 0,
+      title: const Text('TIMETABLE MAKER APP'),
+      backgroundColor: Colors.blue,
+      actions: const [
+        CircleAvatar(
+          backgroundImage: AssetImage('assets/timetable.png'),
+        ),
+        SizedBox(width: 20),
+      ],
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +78,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Expanded(                                                    //on tapping
+            Expanded(
               child: GestureDetector(
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
@@ -38,7 +87,7 @@ class HomeScreen extends StatelessWidget {
                     },
                   ));
                 },
-                child: Container(                                       //first container
+                child: Container(
                   decoration: BoxDecoration(
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(10),
@@ -67,7 +116,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 20),                          //on tapping
+            const SizedBox(height: 20),
             Expanded(
               child: GestureDetector(
                 onTap: () {
@@ -77,7 +126,7 @@ class HomeScreen extends StatelessWidget {
                     },
                   ));
                 },
-                child: Container(                                  //second container
+                child: Container(
                   decoration: BoxDecoration(
                     color: Colors.green,
                     borderRadius: BorderRadius.circular(10),
@@ -85,7 +134,7 @@ class HomeScreen extends StatelessWidget {
                   child: Center(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children:const [
+                      children: const [
                         Icon(
                           Icons.view_list,
                           color: Colors.white,

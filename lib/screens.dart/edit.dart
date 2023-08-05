@@ -1,3 +1,4 @@
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
@@ -23,10 +24,11 @@ class EditScreen extends StatefulWidget {
 
 class _EditScreenState extends State<EditScreen> {
   final NotificationService _notificationService = NotificationService();
-
+  late DatabaseReference dbRef;
   @override
   void initState() {
     super.initState();
+    dbRef=FirebaseDatabase.instance.ref().child('Timetable');
     printSelectedFields();
     _checkTaskAlerts();
    }
@@ -34,6 +36,7 @@ class _EditScreenState extends State<EditScreen> {
   final TaskController _taskController = Get.put(TaskController());
   final TextEditingController _titleController = TextEditingController();
   final TextEditingController _noteController = TextEditingController();
+
   DateTime _selectedDate = DateTime.now();
   String _startTime = DateFormat('hh:mm a').format(DateTime.now()).toString();
   String _endTime = '9:30 PM';
@@ -233,34 +236,6 @@ class _EditScreenState extends State<EditScreen> {
       );
     }
   }
-
-  void _showTaskAlert(String title, String description, String startTime) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text(title),
-          content: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text('Start Time: $startTime'),
-              SizedBox(height: 8.0),
-              Text(description),
-            ],
-          ),
-          actions: <Widget>[
-            TextButton(
-              child: Text('OK'),
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-            ),
-          ],
-        );
-      },
-    );
-  }
   void _checkTaskAlerts() {
     final DateTime now = DateTime.now();
     final String formattedNow = DateFormat('hh:mm a').format(now);
@@ -277,18 +252,13 @@ class _EditScreenState extends State<EditScreen> {
         print("time now: $now");
         print("timedifference : $timeDifference");
         if (timeDifference == remindDuration && timeDifference.isNegative == false) {
-          _handleTaskAlert(title, note, startTime);
+
+          showNotification(title,startTime);
         }
       }
     }
   }
 
-
-  void _handleTaskAlert(String title, String description, String startTime) {
-    // Optionally, you can add additional logic here before showing the alert box
-    showNotification(title,startTime);
-    _showTaskAlert(title, description, startTime);
-  }
 
   _addTaskToDb() async {
     int value = await _taskController.addTask(
@@ -304,13 +274,17 @@ class _EditScreenState extends State<EditScreen> {
         isCompleted: 0,
       ),
     );
-    _notificationService.scheduleNotification(
-      id: value, // You can use the 'value' returned from addTask as the notification ID
-      title: _titleController.text,
-      body: _noteController.text,
-      scheduledDate: _selectedDate,
-      scheduledTime: _startTime,
-    );
+    Map<String, String> Timetable = {
+      'note': _noteController.text,
+      'title': _titleController.text,
+      'startTime': _startTime,
+      'endTime': _startTime,
+      'repeat':_selectedRepeat,
+    };
+
+    dbRef.push().set(Timetable);
+
+
     _checkTaskAlerts();
     print("My id is "+"$value");
   }

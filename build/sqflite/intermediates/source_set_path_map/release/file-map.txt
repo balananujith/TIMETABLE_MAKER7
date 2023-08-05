@@ -1,9 +1,9 @@
-com.tekartik.sqflite-jetified-window-java-1.0.0-beta04-0 C:\Users\acer\.gradle\caches\transforms-3\006d93cd422dbc43e89591147c2de572\transformed\jetified-window-java-1.0.0-beta04\res
-com.tekartik.sqflite-core-1.6.0-1 C:\Users\acer\.gradle\caches\transforms-3\4ca28c4a71705f8a687c69dda140a277\transformed\core-1.6.0\res
-com.tekartik.sqflite-jetified-annotation-experimental-1.1.0-2 C:\Users\acer\.gradle\caches\transforms-3\8965c941cf4bee4d72541b965c7c9d39\transformed\jetified-annotation-experimental-1.1.0\res
-com.tekartik.sqflite-jetified-window-1.0.0-beta04-3 C:\Users\acer\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\res
-com.tekartik.sqflite-main-4 C:\Users\acer\AppData\Local\Pub\Cache\hosted\pub.dev\sqflite-2.2.8+4\android\src\main\res
-com.tekartik.sqflite-release-5 C:\Users\acer\AppData\Local\Pub\Cache\hosted\pub.dev\sqflite-2.2.8+4\android\src\release\res
+com.tekartik.sqflite-jetified-window-java-1.0.0-beta04-0 C:\Users\acer\.gradle\caches\transforms-3\0453bb352c73c4cfd2f7f548d9d96374\transformed\jetified-window-java-1.0.0-beta04\res
+com.tekartik.sqflite-jetified-window-1.0.0-beta04-1 C:\Users\acer\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\res
+com.tekartik.sqflite-core-1.6.0-2 C:\Users\acer\.gradle\caches\transforms-3\68f19437d0737a31487785fad0f2a02f\transformed\core-1.6.0\res
+com.tekartik.sqflite-jetified-annotation-experimental-1.1.0-3 C:\Users\acer\.gradle\caches\transforms-3\770848d9ea980ddcb3dfb30e739c7726\transformed\jetified-annotation-experimental-1.1.0\res
+com.tekartik.sqflite-main-4 C:\Users\acer\AppData\Local\Pub\Cache\hosted\pub.dev\sqflite-2.3.0\android\src\main\res
+com.tekartik.sqflite-release-5 C:\Users\acer\AppData\Local\Pub\Cache\hosted\pub.dev\sqflite-2.3.0\android\src\release\res
 com.tekartik.sqflite-pngs-6 E:\time_table_maker_app (2)\time_table_maker_app\build\sqflite\generated\res\pngs\release
 com.tekartik.sqflite-resValues-7 E:\time_table_maker_app (2)\time_table_maker_app\build\sqflite\generated\res\resValues\release
 com.tekartik.sqflite-rs-8 E:\time_table_maker_app (2)\time_table_maker_app\build\sqflite\generated\res\rs\release

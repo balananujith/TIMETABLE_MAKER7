@@ -1,7 +1,7 @@
-io.flutter.plugins.pathprovider.path_provider_android-jetified-window-java-1.0.0-beta04-0 C:\Users\acer\.gradle\caches\transforms-3\006d93cd422dbc43e89591147c2de572\transformed\jetified-window-java-1.0.0-beta04\res
-io.flutter.plugins.pathprovider.path_provider_android-core-1.6.0-1 C:\Users\acer\.gradle\caches\transforms-3\4ca28c4a71705f8a687c69dda140a277\transformed\core-1.6.0\res
-io.flutter.plugins.pathprovider.path_provider_android-jetified-annotation-experimental-1.1.0-2 C:\Users\acer\.gradle\caches\transforms-3\8965c941cf4bee4d72541b965c7c9d39\transformed\jetified-annotation-experimental-1.1.0\res
-io.flutter.plugins.pathprovider.path_provider_android-jetified-window-1.0.0-beta04-3 C:\Users\acer\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\res
+io.flutter.plugins.pathprovider.path_provider_android-jetified-window-java-1.0.0-beta04-0 C:\Users\acer\.gradle\caches\transforms-3\0453bb352c73c4cfd2f7f548d9d96374\transformed\jetified-window-java-1.0.0-beta04\res
+io.flutter.plugins.pathprovider.path_provider_android-jetified-window-1.0.0-beta04-1 C:\Users\acer\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\res
+io.flutter.plugins.pathprovider.path_provider_android-core-1.6.0-2 C:\Users\acer\.gradle\caches\transforms-3\68f19437d0737a31487785fad0f2a02f\transformed\core-1.6.0\res
+io.flutter.plugins.pathprovider.path_provider_android-jetified-annotation-experimental-1.1.0-3 C:\Users\acer\.gradle\caches\transforms-3\770848d9ea980ddcb3dfb30e739c7726\transformed\jetified-annotation-experimental-1.1.0\res
 io.flutter.plugins.pathprovider.path_provider_android-main-4 C:\Users\acer\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_android-2.0.27\android\src\main\res
 io.flutter.plugins.pathprovider.path_provider_android-release-5 C:\Users\acer\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_android-2.0.27\android\src\release\res
 io.flutter.plugins.pathprovider.path_provider_android-pngs-6 E:\time_table_maker_app (2)\time_table_maker_app\build\path_provider_android\generated\res\pngs\release

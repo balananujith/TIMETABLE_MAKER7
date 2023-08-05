@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "227422289572",
-    "project_id": "timetablemaker7",
-    "storage_bucket": "timetablemaker7.appspot.com"
+    "project_number": "596135433673",
+    "project_id": "timetablemaker-8218e",
+    "storage_bucket": "timetablemaker-8218e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:227422289572:android:bdab45f8e6501ee5687031",
+        "mobilesdk_app_id": "1:596135433673:android:b5cab5c277019fc43c0418",
         "android_client_info": {
           "package_name": "com.example.time_table_maker_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "227422289572-2jlpnule520hio2sto0lgcu21h5hbu3c.apps.googleusercontent.com",
+          "client_id": "596135433673-cn68pim252up1rfr6na9355iqpvtr604.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBqOT8Skc3r1lwFfq1pk-83v2sRC0r8OGk"
+          "current_key": "AIzaSyBXrMF6q9o4sYIdRS5WUCCmdmRM7zXHceY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "227422289572-2jlpnule520hio2sto0lgcu21h5hbu3c.apps.googleusercontent.com",
+              "client_id": "596135433673-cn68pim252up1rfr6na9355iqpvtr604.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

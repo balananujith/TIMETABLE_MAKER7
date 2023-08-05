@@ -1,0 +1,14 @@
+io.flutter.plugins.firebase.core.firebase_core-jetified-window-java-1.0.0-beta04-0 C:\Users\acer\.gradle\caches\transforms-3\0453bb352c73c4cfd2f7f548d9d96374\transformed\jetified-window-java-1.0.0-beta04\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-firebase-common-20.1.2-1 C:\Users\acer\.gradle\caches\transforms-3\2dd1dcdda08a104b9b67ca34c3d12500\transformed\jetified-firebase-common-20.1.2\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-play-services-basement-18.1.0-2 C:\Users\acer\.gradle\caches\transforms-3\40093f50956da5c3a8aef971092f264f\transformed\jetified-play-services-basement-18.1.0\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-window-1.0.0-beta04-3 C:\Users\acer\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\res
+io.flutter.plugins.firebase.core.firebase_core-core-1.6.0-4 C:\Users\acer\.gradle\caches\transforms-3\68f19437d0737a31487785fad0f2a02f\transformed\core-1.6.0\res
+io.flutter.plugins.firebase.core.firebase_core-jetified-annotation-experimental-1.1.0-5 C:\Users\acer\.gradle\caches\transforms-3\770848d9ea980ddcb3dfb30e739c7726\transformed\jetified-annotation-experimental-1.1.0\res
+io.flutter.plugins.firebase.core.firebase_core-main-6 C:\Users\acer\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-1.24.0\android\src\main\res
+io.flutter.plugins.firebase.core.firebase_core-release-7 C:\Users\acer\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-1.24.0\android\src\release\res
+io.flutter.plugins.firebase.core.firebase_core-pngs-8 E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_core\generated\res\pngs\release
+io.flutter.plugins.firebase.core.firebase_core-resValues-9 E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_core\generated\res\resValues\release
+io.flutter.plugins.firebase.core.firebase_core-rs-10 E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_core\generated\res\rs\release
+io.flutter.plugins.firebase.core.firebase_core-mergeReleaseResources-11 E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_core\intermediates\incremental\release\mergeReleaseResources\merged.dir
+io.flutter.plugins.firebase.core.firebase_core-mergeReleaseResources-12 E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_core\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+io.flutter.plugins.firebase.core.firebase_core-merged_res-13 E:\time_table_maker_app (2)\time_table_maker_app\build\firebase_core\intermediates\merged_res\release
